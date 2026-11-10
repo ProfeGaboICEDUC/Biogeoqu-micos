@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="WebQuest de Biología para I° medio sobre los ciclos del agua, carbono, nitrógeno y fósforo.">
+<title>La ruta de la materia · WebQuest</title>
+<style>
+:root{--ink:#21183b;--muted:#574d69;--violet:#5327ac;--line:#dfd4ef;--bg:#faf7ff;--pink:#ffcae9;--yellow:#ffeb94}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.08rem/1.58 system-ui,sans-serif}a{color:#4e219e;text-underline-offset:3px}button{cursor:pointer;font:inherit;color:inherit}a:focus-visible,button:focus-visible{outline:3px solid #ad1873;outline-offset:4px}h1,h2,h3,h4,p{margin:0 0 .55em}h1,h2,h3,h4{line-height:1.12;letter-spacing:-.025em}h1{font-size:clamp(3rem,9vw,6.2rem);max-width:9ch;margin:.16em 0 .22em}h2{font-size:clamp(1.9rem,4vw,2.8rem)}h3{font-size:1.55rem}h4{font-size:1.14rem}.shell{width:min(1120px,calc(100% - 36px));margin:auto}.top{background:#fff;border-bottom:1px solid var(--line)}.top .shell{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 0}.top nav{display:flex;gap:14px;flex-wrap:wrap}.hero{background:#eadeff;border-bottom:1px solid var(--line)}.hero .shell{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:16px;padding:clamp(32px,6vw,78px) 0}.hero p{font-size:1.2rem;max-width:39ch}.hero svg{width:100%;max-height:350px}.tag{display:inline-block;font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;background:var(--yellow);padding:5px 12px;border-radius:100px}.buttons{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}.btn{display:inline-block;border:1px solid #baa6de;border-radius:10px;padding:9px 14px;background:#fff;font-weight:750;text-decoration:none;color:var(--ink)}.primary{background:var(--violet);color:#fff;border-color:var(--violet)}section{scroll-margin-top:12px;margin:34px 0}.box,.cycle{background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(16px,3vw,29px)}.intro{color:var(--muted);max-width:66ch}.timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;list-style:none;padding:0;margin:1em 0}.timeline li{background:#f1e8ff;padding:13px;border-radius:12px}.timeline b{display:block;color:#4e219e}.cycle-nav{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}.cycle-nav a{background:var(--accent);border-color:transparent}.cycle{margin:18px 0;border-top:7px solid var(--accent);scroll-margin-top:12px}.split{display:grid;grid-template-columns:1.12fr 1fr;gap:20px;align-items:start}.diagram{margin:0;background:var(--accent);border-radius:14px;padding:10px}.diagram svg{width:100%;display:block}.diagram figcaption{font-size:.85rem;margin:3px 7px}.case{background:#f6f0ff;border-left:4px solid #8654d2;padding:11px 13px;border-radius:6px}.links{padding-left:1.25em}.links li{margin:.45em 0}.links small{display:block;color:var(--muted);font-size:.94em}.checklist{padding:0;list-style:none}.checklist label{display:flex;gap:.6em;align-items:baseline;margin:.42em 0}.checklist input{accent-color:var(--violet);transform:scale(1.25)}details{margin-top:16px;border-top:1px solid var(--line);padding-top:11px}summary{font-weight:750;cursor:pointer}.answer{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}.answer button[aria-pressed=true]{border-color:#5327ac;background:#ece0ff}.feedback{min-height:1.6em}.sheet{background:#fff8e2}.sheet ul{padding-left:1.25em}.sheet li{margin:.35em 0}footer{padding:14px 0 38px;color:var(--muted)}[hidden]{display:none!important}body.projecting .screen-only{display:none!important}body.projecting #pauta{font-size:clamp(1.15rem,2.4vw,1.65rem)}body.projecting #pauta h2{font-size:clamp(2rem,4vw,3.5rem)}
+@media(max-width:720px){.hero .shell,.split{grid-template-columns:1fr}.hero svg{max-height:180px}.top nav{font-size:.94rem}}
+@page{size:A4;margin:13mm}
+@media print{body{background:#fff;color:#111;font-size:11pt}.shell{width:100%}.top,.hero,.screen-only,.buttons,footer{display:none!important}main{display:block}#pauta{margin:0;border:0;padding:0;font-size:12pt;background:#fff}.sheet h2{font-size:24pt}.sheet h3{font-size:16pt}}
+</style>
+</head>
+<body>
+<header class="top"><div class="shell"><strong>Biología · I° medio</strong><nav aria-label="Secciones"><a href="#mision">Misión</a><a href="#ciclos">Fichas</a><a href="#producto">Entrega</a><a href="#pauta">Pauta</a></nav></div></header>
+<div class="hero"><div class="shell"><div><span class="tag">WebQuest · Clase 2 · 90 min</span><h1>La ruta de la materia</h1><p>¿Cómo viaja la materia entre los seres vivos y el ambiente? Investiguen un ciclo y expliquen su recorrido con un afiche.</p><div class="buttons"><a class="btn primary" href="#ciclos">Ir a las fichas</a><button class="btn" id="project" type="button">Vista para proyectar</button></div></div>
+<svg viewBox="0 0 400 280" role="img" aria-label="Cuatro estaciones de la materia: agua, carbono, nitrógeno y fósforo"><ellipse cx="200" cy="140" rx="151" ry="92" fill="none" stroke="#8156c6" stroke-width="2" stroke-dasharray="5 8" transform="rotate(-19 200 140)"/><circle cx="200" cy="140" r="72" fill="#5327ac"/><text x="200" y="149" text-anchor="middle" fill="white" font-size="26" font-weight="800">Materia</text><g text-anchor="middle" font-size="25" font-weight="800" fill="#21183b"><circle cx="88" cy="91" r="38" fill="#b9eff0"/><text x="88" y="100">H₂O</text><circle cx="310" cy="56" r="36" fill="#ffcae9"/><text x="310" y="65">C</text><circle cx="303" cy="197" r="38" fill="#dfd0ff"/><text x="303" y="206">N</text><circle cx="91" cy="222" r="36" fill="#ffeb94"/><text x="91" y="231">P</text></g></svg>
+</div></div>
+<main class="shell">
+<section id="mision" class="box screen-only"><span class="tag">01 · Misión</span><h2>Investiguen en equipo</h2><p>Trabajen con una tablet por grupo. Registren nombres y ciclo asignado. Distribuyan los roles de lectura y datos, registro, diseño y vocería. Pueden compartir un rol según el tamaño del equipo.</p><ol class="timeline" id="timeline"></ol><p><strong>Materiales:</strong> tablet, cuadernillo o papel para tomar notas, cartulina u hoja grande y plumones.</p></section>
+<section id="ciclos" class="screen-only"><span class="tag">02 · Fichas</span><h2>Elijan el ciclo asignado</h2><p class="intro">Lean la ficha, sigan las flechas y revisen un dato de la fuente propuesta. Anoten el lugar, el período, la unidad y lo que el dato permite observar. Si el enlace demora, avancen con el esquema y el caso de la ficha.</p><nav class="cycle-nav" id="cycleNav" aria-label="Ciclos"></nav><div id="cycleCards"></div></section>
+<section id="producto" class="box screen-only"><span class="tag">03 · Entrega</span><h2>Un afiche físico por equipo</h2><p>Expliquen el ciclo con sus palabras. Marquen cada criterio a medida que lo revisen y entreguen el afiche al docente al cierre.</p><ul class="checklist" id="checklist"></ul><p><strong>Formato de la fuente:</strong> institución, nombre del recurso y enlace. Si usaron un gráfico o tabla, añadan lugar, período y unidad.</p></section>
+<section id="pauta" class="box sheet"><h2>Pauta de trabajo</h2><p><strong>Biología · I° medio · Clase 2 · 90 min</strong></p><div id="projectionContent"></div><div class="buttons"><button type="button" class="btn primary" id="pdf">Imprimir / Guardar PDF</button><button type="button" class="btn" id="png">Descargar pauta en PNG</button><button type="button" class="btn" id="exit" hidden>Volver a la WebQuest</button></div></section>
+</main><footer class="shell">WebQuest · Ciclos biogeoquímicos</footer>
+<script>
+const schedule = [
+ ['0–10 min','Organicen el equipo y los roles.'],
+ ['10–30 min','Lean la ficha, respondan las preguntas y revisen un dato.'],
+ ['30–65 min','Dibujen y rotulen el afiche.'],
+ ['65–80 min','Recorran la galería y respondan la pregunta de otro grupo.'],
+ ['80–90 min','Revisen, entreguen el afiche y ordenen los materiales.']
+];
+const requirements = [
+ 'Título del ciclo y nombres del equipo.',
+ 'Esquema con al menos tres reservorios y tres procesos rotulados. Las flechas muestran hacia dónde se mueve la materia.',
+ 'Explicación breve de por qué el ciclo es importante para los seres vivos.',
+ 'Una intervención humana y una consecuencia explicada.',
+ 'Un dato con lugar, período y unidad, o una observación del caso de la ficha si el recurso de datos no carga.',
+ 'Una pregunta para quienes visiten el afiche y las fuentes consultadas.'
+];
+const cycles = [
+ {
+ id:'agua',name:'Agua',color:'#cbf4f3',form:'H₂O',big:'¿Qué cambia cuando el suelo se cubre de pavimento?',
+ intro:'El agua circula entre océanos, atmósfera, suelo, aguas subterráneas y seres vivos. Puede cambiar de estado durante el recorrido. La infiltración permite que parte del agua entre al suelo.',
+ diagram:['Océano','Atmósfera','Suelo y ríos','Evaporación','Precipitación','Escorrentía'],
+ case:'En una superficie pavimentada suele infiltrarse menos agua y puede aumentar la escorrentía hacia calles y cauces.',
+ questions:['¿Cómo llega el agua del océano a la atmósfera y cómo vuelve a la superficie?','¿En qué se diferencian infiltración y escorrentía?'],
+ source:['USGS · Diagrama del ciclo del agua en español','https://water.usgs.gov/gotita/watercyclegraphicspanish.html','Sigan la ruta desde el océano hasta el suelo y los ríos.'],
+ data:['Dirección Meteorológica de Chile · Servicios Climáticos','https://climatologia.meteochile.gob.cl/','Busquen precipitación en una estación y comparen dos meses del mismo año. La unidad es milímetros (mm).'],
+ quiz:['¿Qué proceso hace que el agua penetre en el suelo?',['Escorrentía','Infiltración','Evaporación'],1,'La infiltración lleva agua desde la superficie hacia el interior del suelo.']
+ },
+ {
+ id:'carbono',name:'Carbono',color:'#ffd5ed',form:'C',big:'¿Qué ruta aumenta el CO₂ en el aire cuando quemamos combustibles fósiles?',
+ intro:'El carbono se encuentra en el aire, los organismos, el océano, los suelos y las rocas. Los productores son organismos que fabrican su propia materia orgánica a partir de sustancias inorgánicas. Plantas y algas incorporan carbono del CO₂ mediante la fotosíntesis.',
+ diagram:['CO₂ del aire','Productores','Consumidores','Fotosíntesis','Alimentación','Respiración'],
+ case:'Al quemar carbón, petróleo o gas, parte del carbono que estuvo almacenado en esos combustibles pasa a la atmósfera como CO₂.',
+ questions:['¿Qué proceso incorpora carbono del aire a los productores?','¿Cómo vuelve parte del carbono de los seres vivos al aire?'],
+ source:['OpenStax · Ciclos biogeoquímicos','https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles','Vean el esquema del carbono y distingan rutas rápidas y lentas. Recurso en inglés.'],
+ data:['NOAA · Serie mensual de CO₂ en Mauna Loa','https://gml.noaa.gov/ccgg/trends/','Comparen el mismo mes en dos años distintos. La concentración se expresa en partes por millón (ppm).'],
+ quiz:['¿Qué proceso incorpora CO₂ a la materia orgánica de las plantas?',['Combustión','Respiración','Fotosíntesis'],2,'La fotosíntesis incorpora carbono del CO₂ para formar materia orgánica.']
+ },
+ {
+ id:'nitrogeno',name:'Nitrógeno',color:'#e5d8ff',form:'N',big:'¿Cómo llega el nitrógeno del aire a una planta?',
+ intro:'La atmósfera contiene mucho nitrógeno como N₂. Ciertos microorganismos pueden fijarlo y convertirlo en amoníaco, que en el suelo puede encontrarse como amonio. Las plantas absorben nitrógeno principalmente como amonio o nitrato. Otros microorganismos pueden devolver N₂ a la atmósfera.',
+ diagram:['N₂ atmosférico','Suelo: amonio','Seres vivos','Fijación','Asimilación',''],
+ case:'Si el aporte de fertilizantes supera lo que absorben los cultivos, parte del nitrógeno puede llegar a cuerpos de agua y favorecer un crecimiento excesivo de algas.',
+ questions:['¿Qué hacen los microorganismos durante la fijación?','¿Qué formas de nitrógeno pueden absorber las plantas y cómo llega luego a los animales?'],
+ source:['OpenStax · Ciclo del nitrógeno','https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles','En la sección de nitrógeno, busquen fijación, nitrificación y desnitrificación. Recurso en inglés.'],
+ data:['FAOSTAT · Balance de nutrientes en tierras de cultivo','https://www.fao.org/faostat/en/#data/ESB','Seleccionen Chile y una serie de nitrógeno. Comparen dos años y anoten la unidad indicada.'],
+ quiz:['¿Qué proceso transforma N₂ atmosférico en una forma que puede incorporarse al suelo?',['Fijación','Desnitrificación','Precipitación'],0,'Ciertos microorganismos fijan N₂ y lo convierten en amoníaco o amonio.']
+ },
+ {
+ id:'fosforo',name:'Fósforo',color:'#fff0ac',form:'P',big:'¿Cómo puede llegar el fósforo de una roca hasta una laguna?',
+ intro:'El fósforo circula sobre todo entre rocas, suelo, agua y seres vivos. La meteorización libera fosfatos y las plantas pueden absorberlos. En escalas geológicas, parte del fósforo que llega a los sedimentos puede volver a formar roca.',
+ diagram:['Rocas','Suelo y agua','Seres vivos','Meteorización','Asimilación',''],
+ case:'El fósforo de fertilizantes o aguas residuales puede llegar a lagos y favorecer la proliferación de algas. Su descomposición puede reducir el oxígeno del agua.',
+ questions:['¿Cómo pasa el fósforo de las rocas al suelo?','¿Cómo puede un exceso de fósforo reducir el oxígeno de un lago?'],
+ source:['OpenStax · Ciclo del fósforo','https://openstax.org/books/biology-2e/pages/46-3-biogeochemical-cycles','En la sección de fósforo, sigan la ruta roca, suelo, organismo y sedimento. Recurso en inglés.'],
+ data:['FAOSTAT · Balance de nutrientes en tierras de cultivo','https://www.fao.org/faostat/en/#data/ESB','Seleccionen Chile y una serie de fósforo. Comparen dos años y anoten la unidad indicada.'],
+ quiz:['¿Qué proceso libera fosfatos de las rocas?',['Evaporación','Meteorización','Fijación de nitrógeno'],1,'La meteorización de las rocas puede liberar fosfatos al suelo o al agua.']
+ }
+];
+const list = (items, tag='ul') => '<'+tag+'>'+items.map(item=>'<li>'+item+'</li>').join('')+'</'+tag+'>';
+const timing = schedule.map(([time,step])=>'<b>'+time+'</b> '+step);
+document.querySelector('#timeline').innerHTML = timing.map(item=>'<li>'+item+'</li>').join('');
+document.querySelector('#checklist').innerHTML = requirements.map(item=>'<li><label><input type="checkbox"><span>'+item+'</span></label></li>').join('');
+const brief = [
+ ['Plan de 90 minutos',schedule.map(([time,step])=>time+' · '+step)],
+ ['Afiche físico para entregar',requirements],
+ ['Fichas disponibles', [cycles.map(c=>c.name).join(' · ')+'. Cada equipo trabaja el ciclo asignado.']]
+];
+document.querySelector('#projectionContent').innerHTML = brief.map(([title,items])=>'<h3>'+title+'</h3>'+list(items)).join('');
+document.querySelector('#cycleNav').innerHTML = cycles.map(c=>'<a class="btn" style="--accent:'+c.color+'" href="#'+c.id+'">'+c.name+'</a>').join('');
+function diagram(c) {
+ const [a,b,d,first,second,third] = c.diagram;
+ const bottom = third
+  ? '<path d="M260 286 V317 H32 V64 H62"/><text x="150" y="307">'+third+'</text>'
+  : '<text x="260" y="318">El esquema muestra una parte del ciclo.</text>';
+ const rows = [[a,42],[b,151],[d,260]].map(([label,y])=>
+ '<rect x="70" y="'+(y-24)+'" width="380" height="50" rx="12" fill="white"/><text x="260" y="'+(y+8)+'" font-size="25" font-weight="750">'+label+'</text>').join('');
+ return '<figure class="diagram"><svg viewBox="0 0 520 340" role="img" aria-label="'+a+' a '+b+' por '+first+', luego a '+d+' por '+second+(third?', y retorno por '+third:'')+'"><defs><marker id="arrow-'+c.id+'" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#502790"/></marker></defs><style>path:not(marker path){fill:none;stroke:#502790;stroke-width:3;marker-end:url(#arrow-'+c.id+')}text{fill:#21183b;text-anchor:middle;font-family:system-ui;font-size:19px}</style>'+rows+'<path d="M260 69 V124"/><path d="M260 178 V233"/><text x="276" y="108" style="text-anchor:start">'+first+'</text><text x="276" y="216" style="text-anchor:start">'+second+'</text>'+bottom+'</svg><figcaption>Ruta simplificada. Usen la ficha y la fuente para añadir otras conexiones.</figcaption></figure>';
+}
+function resource([label,url,guide]) {
+ return '<li><a href="'+url+'" target="_blank" rel="noopener">'+label+'</a><small>'+guide+'</small></li>';
+}
+document.querySelector('#cycleCards').innerHTML = cycles.map(c=>{
+ const [question,choices]=c.quiz;
+ return '<article class="cycle" id="'+c.id+'" style="--accent:'+c.color+'"><h3>'+c.name+' · '+c.form+'</h3><p><strong>'+c.big+'</strong></p><div class="split"><div><p>'+c.intro+'</p><p class="case"><strong>Caso para el afiche.</strong> '+c.case+'</p><h4>Preguntas guía</h4>'+list(c.questions,'ol')+'</div>'+diagram(c)+'</div><h4>Fuentes y datos</h4><ul class="links">'+resource(c.source)+resource(c.data)+'</ul><details><summary>Web quiz · Comprueben lo aprendido</summary><p>'+question+'</p><div class="answer" role="group" aria-label="Respuestas">'+choices.map((choice,i)=>'<button class="btn" type="button" aria-pressed="false" data-choice="'+i+'">'+choice+'</button>').join('')+'</div><p class="feedback" role="status"></p></details></article>';
+}).join('');
+// Apply SVG arrow styling locally so the four illustrations have independent markers.
+document.querySelectorAll('.diagram svg').forEach(svg=>{
+ const marker = svg.querySelector('marker').id;
+ svg.querySelector('style').remove();
+ svg.querySelectorAll(':scope > path').forEach(path=>{
+  path.setAttribute('fill','none');
+  path.setAttribute('stroke','#502790');
+  path.setAttribute('stroke-width','3');
+  path.setAttribute('marker-end','url(#'+marker+')');
+ });
+ svg.querySelectorAll('text').forEach(t=>{
+  t.setAttribute('fill','#21183b');
+  t.setAttribute('text-anchor','middle');
+  t.setAttribute('font-family','system-ui');
+  if (!t.hasAttribute('font-size')) t.setAttribute('font-size','19');
+ });
+});
+document.querySelector('#cycleCards').addEventListener('click',event=>{
+ const button=event.target.closest('[data-choice]');
+ if(!button)return;
+ const card=button.closest('article');
+ const quiz=cycles.find(c=>c.id===card.id).quiz;
+ button.parentElement.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+ card.querySelector('.feedback').textContent=Number(button.dataset.choice)===quiz[2]?'Correcto. '+quiz[3]:'Revisen la ficha y prueben otra vez.';
+});
+const exit=document.querySelector('#exit');
+document.querySelector('#project').addEventListener('click',()=>{
+ document.body.classList.add('projecting');
+ exit.hidden=false;
+ document.querySelector('#pauta').scrollIntoView();
+ exit.focus({preventScroll:true});
+});
+exit.addEventListener('click',()=>{
+ document.body.classList.remove('projecting');
+ exit.hidden=true;
+ document.querySelector('#project').focus();
+});
+document.querySelector('#pdf').addEventListener('click',()=>window.print());
+document.querySelector('#png').addEventListener('click',()=>{
+ const canvas=document.createElement('canvas');
+ canvas.width=1400;
+ canvas.height=1700;
+ const ctx=canvas.getContext('2d');
+ ctx.fillStyle='#fff8e2';
+ ctx.fillRect(0,0,canvas.width,canvas.height);
+ ctx.fillStyle='#21183b';
+ ctx.font='bold 72px system-ui';
+ ctx.fillText('Pauta de trabajo',78,122);
+ ctx.font='34px system-ui';
+ ctx.fillText('Biología · I° medio · Clase 2 · 90 min',78,183);
+ let y=265;
+ for(const [title,items] of brief){
+  ctx.fillStyle='#5327ac';
+  ctx.font='bold 46px system-ui';
+  ctx.fillText(title,78,y);
+  y+=64;
+  ctx.fillStyle='#21183b';
+  ctx.font='34px system-ui';
+  for(const item of items){
+   ctx.fillText('•',82,y);
+   let line='';
+   for(const word of item.split(' ')){
+    const next=line?line+' '+word:word;
+    if(ctx.measureText(next).width>1160){
+     ctx.fillText(line,119,y);
+     y+=47;
+     line=word;
+    }else line=next;
+   }
+   ctx.fillText(line,119,y);
+   y+=55;
+  }
+  y+=42;
+ }
+ const cropped=document.createElement('canvas');
+ cropped.width=canvas.width;
+ cropped.height=Math.min(canvas.height,y+12);
+ cropped.getContext('2d').drawImage(canvas,0,0);
+ const link=document.createElement('a');
+ link.href=cropped.toDataURL('image/png');
+ link.download='Pauta_WebQuest_Ciclos.png';
+ link.click();
+});
+</script>
+</body>
+</html>
